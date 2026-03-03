@@ -14,6 +14,38 @@ Persistência: Serialização de objetos em arquivos binários (.dat).
 
 Arquitetura: MVC (Model-View-Controller).
 
+
+🚀 Funcionalidades Principais
+Cadastro Híbrido: Diferencia campos para livros físicos (páginas e localização) e ebooks (tamanho em MB e formato).
+
+Controle de Progresso:
+
+Livros Físicos: Calcula automaticamente a porcentagem lida com base na página atual e total de páginas.
+
+Ebooks: Registro direto da porcentagem de conclusão.
+
+Busca Avançada: Filtragem em tempo real na listagem por título ou autor.
+
+Persistência Binária: Os dados são salvos em um arquivo livros.dat através de serialização, garantindo que as informações permaneçam salvas entre execuções.
+
+📸 Demonstração do Sistema
+Interface Inicial
+Navegação centralizada para acesso ao acervo e cadastros.
+![Tela Inicial](assets/tela-inicial.png)
+
+
+Gerenciamento de Acervo
+Tabela interativa para visualização de dados, atualização de progresso e remoção de obras.
+![Listagem de Livros](assets/livros.png)
+
+
+Formulário de Cadastro
+Interface dinâmica que adapta os campos de entrada de acordo com o tipo de mídia selecionada.
+![Cadastro](assets/tela-de-cadastro-ebook.png)
+
+
+![Cadastro](assets/tela-de-cadastro-ebook.png)
+
 🧩 Princípios de POO Aplicados:
 
 
@@ -27,42 +59,30 @@ Encapsulamento: Todos os atributos de modelo são privados com acesso via Getter
 
 Interfaces: Uso da interface ILivro para definir o contrato de operações CRUD do repositório.
 
-🚀 Funcionalidades Principais:
 
+📁 Estrutura do Projeto (MVC)
+O código está organizado para facilitar a manutenção e escalabilidade:
 
-Cadastro Híbrido: Suporte para livros físicos (com número de páginas e localização) e e-books (com tamanho em MB e formato).
+src/model/: Classes de domínio (Livro, Ebook, LivroFisico) e a interface ILivro.
 
-Acompanhamento de Leitura:
+src/controller/: Lógica de controle do sistema e controladores das telas JavaFX.
 
-Cálculo automático de porcentagem lida para livros físicos.
+src/view/: Arquivos .fxml que definem o layout visual das interfaces.
 
-Registro de progresso para e-books.
+src/data/: Implementação do repositório e manipulação do arquivo de dados.
 
-Busca e Filtros: Pesquisa em tempo real por título ou autor na tabela de livros.
+ativos/: Armazena as capturas de tela e o diagrama de classes do projeto.
 
-Persistência de Dados: Os dados são salvos automaticamente no arquivo livros.dat, garantindo que as informações não sejam perdidas ao fechar o programa.
+💻 Como Clonar e Rodar
+Clonar o Repositório: No terminal, execute o comando abaixo para baixar o projeto:
+git clone https://github.com/Emerson484/Colecionateca.git
 
-🖥️ Telas do Sistema:
+Configurar o Ambiente: Certifique-se de ter o JDK 17+ e o JavaFX SDK configurados na sua IDE.
 
+Executar: Abra o projeto e inicie pela classe ProjetoBiblioteca.java.
 
-O sistema conta com três interfaces principais:
+Persistência: O arquivo livros.dat será gerado automaticamente na primeira execução para salvar seus dados.
 
-Dashboard Inicial: Acesso rápido ao gerenciamento.
-
-Lista de Livros: Tabela interativa com opções de remoção, detalhes e atualização de progresso.
-
-Cadastro Detalhado: Formulário dinâmico que alterna campos dependendo do tipo de livro selecionado.
-
-🔧 Como Executar:
-
-
-Clone o repositório: git clone https://github.com/Emerson484/colecionateca.git
-
-Abra o projeto em uma IDE (NetBeans, IntelliJ ou VS Code).
-
-Certifique-se de ter o SDK do JavaFX configurado.
-
-Execute a classe ProjetoBiblioteca.java.
 
 Desenvolvido por: Emerson Jesus,Pablo Teixeira,Maicon Ademario,Bruno Vinicius
 
