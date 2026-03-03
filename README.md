@@ -15,7 +15,9 @@ Persistência: Serialização de objetos em arquivos binários (.dat).
 Arquitetura: MVC (Model-View-Controller).
 
 
-🚀 Funcionalidades Principais
+🚀 Funcionalidades Principais:
+
+
 Cadastro Híbrido: Diferencia campos para livros físicos (páginas e localização) e ebooks (tamanho em MB e formato).
 
 Controle de Progresso:
@@ -28,7 +30,7 @@ Busca Avançada: Filtragem em tempo real na listagem por título ou autor.
 
 Persistência Binária: Os dados são salvos em um arquivo livros.dat através de serialização, garantindo que as informações permaneçam salvas entre execuções.
 
-📸 Demonstração do Sistema
+📸 Demonstração do Sistema:
 Interface Inicial
 Navegação centralizada para acesso ao acervo e cadastros.
 ![Tela Inicial](assets/tela-inicial.png)
@@ -44,7 +46,7 @@ Interface dinâmica que adapta os campos de entrada de acordo com o tipo de míd
 ![Cadastro](assets/tela-de-cadastro-ebook.png)
 
 
-![Cadastro](assets/tela-de-cadastro-ebook.png)
+![Cadastro](assets/tela-de-cadastro-livro-fisico.png)
 
 🧩 Princípios de POO Aplicados:
 
@@ -60,7 +62,12 @@ Encapsulamento: Todos os atributos de modelo são privados com acesso via Getter
 Interfaces: Uso da interface ILivro para definir o contrato de operações CRUD do repositório.
 
 
+![Diagrama de Classes](assets/diagrama-de-classes.png)
+
+
 📁 Estrutura do Projeto (MVC)
+
+
 O código está organizado para facilitar a manutenção e escalabilidade:
 
 src/model/: Classes de domínio (Livro, Ebook, LivroFisico) e a interface ILivro.
@@ -74,6 +81,8 @@ src/data/: Implementação do repositório e manipulação do arquivo de dados.
 ativos/: Armazena as capturas de tela e o diagrama de classes do projeto.
 
 💻 Como Clonar e Rodar
+
+
 Clonar o Repositório: No terminal, execute o comando abaixo para baixar o projeto:
 git clone https://github.com/Emerson484/Colecionateca.git
 
@@ -86,6 +95,6 @@ Persistência: O arquivo livros.dat será gerado automaticamente na primeira exe
 
 Desenvolvido por: Emerson Jesus,Pablo Teixeira,Maicon Ademario,Bruno Vinicius
 
-![Diagrama de Classes](assets/diagrama-de-classes.png)
+
 
 Disciplina: Programação Orientada a Objetos
