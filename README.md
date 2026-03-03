@@ -70,6 +70,8 @@ Interfaces: Uso da interface ILivro para definir o contrato de operações CRUD 
 
 O código está organizado para facilitar a manutenção e escalabilidade:
 
+src/: Contém a classe principal ProjetoBiblioteca.java que inicia a aplicação e carrega a interface inicial.
+
 src/model/: Classes de domínio (Livro, Ebook, LivroFisico) e a interface ILivro.
 
 src/controller/: Lógica de controle do sistema e controladores das telas JavaFX.
