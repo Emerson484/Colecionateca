@@ -66,4 +66,6 @@ Execute a classe ProjetoBiblioteca.java.
 
 Desenvolvido por: Emerson Jesus,Pablo Teixeira,Maicon Ademario,Bruno Vinicius
 
+![Diagrama de Classes](assets/diagrama-de-classes.png)
+
 Disciplina: Programação Orientada a Objetos
