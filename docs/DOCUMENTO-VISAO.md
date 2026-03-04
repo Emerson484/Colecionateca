@@ -1,4 +1,6 @@
 Documento de Visão: Colecionateca
+
+
 1. Introdução
 
    
@@ -22,7 +24,7 @@ isbn: Código de identificação do livro.
 
 2. Descrição Geral
 
-3. 
+   
 Público-alvo: Leitores comuns e colecionadores que desejam planejar suas próximas leituras e acompanhar sua biblioteca pessoal de forma digital.
 
 Dificuldade: Ao avançar em suas aquisições, o espaço físico pode ser insuficiente e a mistura de livros físicos com e-books impede um acompanhamento geral.
