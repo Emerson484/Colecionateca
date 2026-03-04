@@ -31,6 +31,8 @@ Busca Avançada: Filtragem em tempo real na listagem por título ou autor.
 Persistência Binária: Os dados são salvos em um arquivo livros.dat através de serialização, garantindo que as informações permaneçam salvas entre execuções.
 
 📸 Demonstração do Sistema:
+
+
 Interface Inicial
 Navegação centralizada para acesso ao acervo e cadastros.
 ![Tela Inicial](assets/tela-inicial.png)
